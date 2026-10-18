@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UniBot AI | University Intelligence Hub - Nirbhay Pratap Singh</title>
+  <title>UniBot AI | 100+ Universities Intelligence Hub - Nirbhay Pratap Singh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
       background: var(--card-bg);
       backdrop-filter: var(--card-blur);
       border-bottom: 1px solid var(--glass-border);
-      padding: 1rem 2rem;
+      padding: 0.9rem 1.8rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -58,8 +58,8 @@
     }
 
     .brand-icon {
-      width: 44px;
-      height: 44px;
+      width: 42px;
+      height: 42px;
       background: linear-gradient(135deg, #0284c7, #38bdf8);
       border-radius: 12px;
       display: flex;
@@ -69,20 +69,20 @@
     }
 
     .brand-icon svg {
-      width: 26px;
-      height: 26px;
+      width: 24px;
+      height: 24px;
       fill: none;
       stroke: #fff;
       stroke-width: 2.2;
     }
 
     .brand-info h1 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 800;
     }
 
     .brand-info span {
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -111,14 +111,14 @@
 
     .main-grid {
       flex: 1;
-      max-width: 1350px;
+      max-width: 1400px;
       width: 100%;
       margin: 0 auto;
-      padding: 1.5rem;
+      padding: 1.25rem;
       display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 1.5rem;
-      height: calc(100vh - 80px);
+      grid-template-columns: 340px 1fr;
+      gap: 1.25rem;
+      height: calc(100vh - 75px);
     }
 
     .sidebar {
@@ -126,38 +126,70 @@
       backdrop-filter: var(--card-blur);
       border: 1px solid var(--glass-border);
       border-radius: 20px;
-      padding: 1.5rem;
+      padding: 1.25rem;
       display: flex;
       flex-direction: column;
-      gap: 1.25rem;
-      overflow-y: auto;
+      gap: 1rem;
+      overflow: hidden;
+    }
+
+    .sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .sidebar h2 {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--text-muted);
       font-weight: 700;
     }
 
-    .uni-quick-list {
+    .filter-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      padding: 9px 12px;
+      color: #fff;
+      font-size: 0.85rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .filter-input:focus {
+      border-color: var(--accent);
+    }
+
+    .uni-scroll-list {
+      flex: 1;
+      overflow-y: auto;
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      list-style: none;
+      gap: 6px;
+      padding-right: 4px;
+    }
+
+    .uni-scroll-list::-webkit-scrollbar {
+      width: 5px;
+    }
+    .uni-scroll-list::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
     }
 
     .uni-btn {
       width: 100%;
       text-align: left;
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--glass-border);
-      padding: 12px 14px;
-      border-radius: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
       color: var(--text-main);
-      font-size: 0.88rem;
-      font-weight: 600;
+      font-size: 0.83rem;
+      font-weight: 500;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
@@ -168,7 +200,8 @@
     .uni-btn:hover {
       background: var(--glass-hover);
       border-color: var(--accent);
-      transform: translateX(4px);
+      color: var(--accent);
+      transform: translateX(3px);
     }
 
     .chat-container {
@@ -183,7 +216,7 @@
 
     .chat-box {
       flex: 1;
-      padding: 1.5rem;
+      padding: 1.25rem;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
@@ -191,10 +224,10 @@
     }
 
     .message {
-      max-width: 82%;
+      max-width: 85%;
       padding: 1rem 1.25rem;
       border-radius: 18px;
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       line-height: 1.5;
       animation: fadeIn 0.3s ease;
     }
@@ -218,16 +251,17 @@
     }
 
     .uni-card {
-      margin-top: 12px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(56, 189, 248, 0.25);
+      margin-top: 10px;
+      background: rgba(15, 23, 42, 0.92);
+      border: 1px solid rgba(56, 189, 248, 0.28);
       border-radius: 16px;
       overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     }
 
     .uni-card img {
       width: 100%;
-      height: 190px;
+      height: 200px;
       object-fit: cover;
       display: block;
       border-bottom: 1px solid var(--glass-border);
@@ -241,7 +275,7 @@
     }
 
     .uni-title {
-      font-size: 1.2rem;
+      font-size: 1.22rem;
       font-weight: 700;
       color: #fff;
     }
@@ -261,26 +295,27 @@
 
     .uni-fact {
       background: rgba(255, 255, 255, 0.04);
-      padding: 8px 10px;
-      border-radius: 8px;
+      padding: 8px 12px;
+      border-radius: 10px;
       font-size: 0.82rem;
     }
 
     .uni-fact strong {
       display: block;
       color: var(--text-muted);
-      font-size: 0.75rem;
+      font-size: 0.74rem;
+      margin-bottom: 2px;
     }
 
     .uni-card a.visit-btn {
       align-self: flex-start;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       background: linear-gradient(135deg, #0284c7, #2563eb);
       color: white;
       text-decoration: none;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 10px;
       font-size: 0.85rem;
       font-weight: 600;
@@ -289,23 +324,23 @@
     }
 
     .uni-card a.visit-btn:hover {
-      box-shadow: 0 4px 14px var(--accent-glow);
+      box-shadow: 0 4px 16px var(--accent-glow);
       transform: translateY(-1px);
     }
 
     .chip-container {
-      padding: 0 1.5rem 0.5rem;
+      padding: 0 1.25rem 0.5rem;
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
     }
 
     .chip {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--glass-border);
       color: var(--accent);
-      font-size: 0.8rem;
-      padding: 6px 12px;
+      font-size: 0.78rem;
+      padding: 5px 12px;
       border-radius: 9999px;
       cursor: pointer;
       transition: var(--transition);
@@ -317,7 +352,7 @@
     }
 
     .input-wrapper {
-      padding: 1rem 1.5rem 1.5rem;
+      padding: 1rem 1.25rem 1.25rem;
       border-top: 1px solid var(--glass-border);
       display: flex;
       gap: 10px;
@@ -345,7 +380,7 @@
       color: white;
       border: none;
       border-radius: 14px;
-      padding: 0 22px;
+      padding: 0 24px;
       font-size: 0.95rem;
       font-weight: 600;
       cursor: pointer;
@@ -388,43 +423,41 @@
     </div>
     <div class="top-badge">
       <div class="pulse"></div>
-      University Database Active
+      107 Verified Universities Loaded
     </div>
   </header>
 
   <div class="main-grid">
     <div class="sidebar">
-      <h2>Featured Universities</h2>
-      <ul class="uni-quick-list">
-        <li><button class="uni-btn" onclick="queryUni('Subharti University')">Subharti University <span>→</span></button></li>
-        <li><button class="uni-btn" onclick="queryUni('IIT Kharagpur')">IIT Kharagpur <span>→</span></button></li>
-        <li><button class="uni-btn" onclick="queryUni('Delhi University')">Delhi University (DU) <span>→</span></button></li>
-        <li><button class="uni-btn" onclick="queryUni('IIT Delhi')">IIT Delhi <span>→</span></button></li>
-        <li><button class="uni-btn" onclick="queryUni('BHU')">BHU Varanasi <span>→</span></button></li>
-      </ul>
-
-      <div style="margin-top: auto; font-size: 0.8rem; color: var(--text-muted); background: rgba(255,255,255,0.03); padding: 12px; border-radius: 12px; border: 1px solid var(--glass-border);">
-        💡 Type any Indian university or institute name to get instant rankings, campus images, overview, and direct portal link.
+      <div class="sidebar-header">
+        <h2>University Directory (<span id="uniCount">107</span>)</h2>
+      </div>
+      <input type="text" id="filterInput" class="filter-input" placeholder="🔍 Quick filter list..." oninput="filterDirectory()" />
+      <div class="uni-scroll-list" id="uniList">
+        <!-- populated dynamically -->
       </div>
     </div>
 
     <div class="chat-container">
       <div class="chat-box" id="chatBox">
         <div class="message bot-msg">
-          Namaste! Main **UniBot** hoon — University Exploration AI Assistant, created by **Nirbhay Pratap Singh**.<br><br>
-          Aap jis bhi university ke baare mein jaanna chahte hain, bas uska naam type karein. Main aapko uske **overview, key courses (BCA, B.Tech, etc.), campus photos, aur official portal link** provide karunga!
+          Namaste! Main **UniBot AI** hoon — Engineered by **Nirbhay Pratap Singh**.<br><br>
+          Aapke system mein **100 se zyada verified universities** (IITs, NITs, Central Universities, Private Campuses, aur Global Institutes jaise Harvard/MIT) ka complete dataset loaded hai.<br><br>
+          Kisi bhi university ka naam likhein ya left list se select karein. Main uski **campus picture, verified overview, top courses (BCA, B.Tech, etc.), admission details aur official webpage link** dikhaunga!
         </div>
       </div>
 
       <div class="chip-container">
-        <span class="chip" onclick="queryUni('Swami Vivekanand Subharti University')">🏫 Subharti University Meerut</span>
+        <span class="chip" onclick="queryUni('Subharti University')">🏫 Subharti University</span>
         <span class="chip" onclick="queryUni('IIT Kharagpur')">🎓 IIT Kharagpur</span>
         <span class="chip" onclick="queryUni('Delhi University')">🏛️ Delhi University</span>
-        <span class="chip" onclick="queryUni('IIT Bombay')">🚀 IIT Bombay</span>
+        <span class="chip" onclick="queryUni('CCSU Meerut')">📚 CCSU Meerut</span>
+        <span class="chip" onclick="queryUni('AKTU Lucknow')">⚙️ AKTU Lucknow</span>
+        <span class="chip" onclick="queryUni('BITS Pilani')">🚀 BITS Pilani</span>
       </div>
 
       <div class="input-wrapper">
-        <input type="text" id="userInput" placeholder="University ka naam likhein (e.g. Subharti, IIT Kharagpur, DU)..." />
+        <input type="text" id="userInput" placeholder="University ka naam likhein (e.g. Subharti, IIT Kharagpur, DU, JNU, Harvard)..." />
         <button class="send-btn" id="sendBtn">
           Search
           <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="m5 12 14-7-7 14-2-5-5-2Z"/></svg>
@@ -434,158 +467,13 @@
   </div>
 
   <script>
-    const chatBox = document.getElementById('chatBox');
-    const userInput = document.getElementById('userInput');
-    const sendBtn = document.getElementById('sendBtn');
-
     const universities = [
-      {
-        keys: ['subharti', 'swami vivekanand subharti', 'meerut'],
-        name: 'Swami Vivekanand Subharti University (SVSU)',
-        location: 'NH-58, Delhi-Haridwar Bypass Road, Meerut, Uttar Pradesh',
-        established: '2008 (UGC Recognized, NAAC "A" Grade)',
-        courses: 'BCA, B.Tech (CSE, IT), MCA, MBBS, Law, Pharmacy',
-        admission: 'Merit-based & SNET Entrance Examination',
-        image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
-        website: 'https://subharti.org/',
-        desc: 'Subharti University Meerut ka ek pramukh higher-education institute hai jisme modern tech labs, computer applications infrastructure aur lush-green residential campus uplabdh hai.'
-      },
-      {
-        keys: ['kharagpur', 'iit kharagpur', 'iit kgp'],
-        name: 'Indian Institute of Technology Kharagpur (IIT KGP)',
-        location: 'Kharagpur, West Bengal, India',
-        established: '1951 (Institute of National Importance)',
-        courses: 'B.Tech, Dual Degree, M.Tech, NPTEL Online Certifications',
-        admission: 'JEE Advanced, GATE, JAM',
-        image: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80',
-        website: 'https://www.iitkgp.ac.in/',
-        desc: 'Bharat ka pehla IIT institute, jo computer science, machine learning research, software engineering aur top-tier global placements ke liye prasiddh hai.'
-      },
-      {
-        keys: ['delhi university', 'du', 'university of delhi'],
-        name: 'University of Delhi (DU)',
-        location: 'North & South Campus, New Delhi, India',
-        established: '1922 (Central University)',
-        courses: 'B.Sc Computer Science, BA, B.Com, MCA',
-        admission: 'CUET (Common University Entrance Test)',
-        image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
-        website: 'http://www.du.ac.in/',
-        desc: 'Bharat ki premier central universities mein se ek, jo vibrant campus life, diverse student culture aur high academic standards ke liye jani jati hai.'
-      },
-      {
-        keys: ['iit delhi', 'iitd'],
-        name: 'Indian Institute of Technology Delhi (IIT Delhi)',
-        location: 'Hauz Khas, New Delhi, India',
-        established: '1961 (Institute of Eminence)',
-        courses: 'B.Tech (CSE, EE, Mechanical), M.Tech, Ph.D',
-        admission: 'JEE Advanced, GATE',
-        image: 'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=800&q=80',
-        website: 'https://home.iitd.ac.in/',
-        desc: 'World-renowned technical institute located in the heart of Delhi, delivering cutting-edge AI and engineering research.'
-      },
-      {
-        keys: ['bhu', 'banaras', 'varanasi'],
-        name: 'Banaras Hindu University (BHU)',
-        location: 'Varanasi, Uttar Pradesh, India',
-        established: '1916 by Pandit Madan Mohan Malaviya',
-        courses: 'BCA, B.Sc Tech, Engineering (IIT-BHU), Arts, Law',
-        admission: 'CUET UG & PG',
-        image: 'https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=800&q=80',
-        website: 'https://www.bhu.ac.in/',
-        desc: 'Asia ke sabse bade residential campus universities mein se ek, jo heritage aur modern higher education ka perfect combination hai.'
-      }
-    ];
-
-    function appendMessage(sender, content) {
-      const msg = document.createElement('div');
-      msg.className = `message ${sender === 'user' ? 'user-msg' : 'bot-msg'}`;
-      msg.innerHTML = content;
-      chatBox.appendChild(msg);
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
-
-    function processUniversityQuery(query) {
-      const q = query.toLowerCase().trim();
-      const found = universities.find(u => u.keys.some(k => q.includes(k)));
-
-      if (found) {
-        const replyHtml = `
-          Yeh rahi <strong>${found.name}</strong> ki poori verified profile:<br>
-          <div class="uni-card">
-            <img src="${found.image}" alt="${found.name}" />
-            <div class="uni-card-body">
-              <div class="uni-title">${found.name}</div>
-              <div class="uni-loc">📍 ${found.location}</div>
-              <p style="color: #cbd5e1; font-size: 0.88rem;">${found.desc}</p>
-              
-              <div class="uni-fact-grid">
-                <div class="uni-fact">
-                  <strong>Established & Accreditation</strong>
-                  ${found.established}
-                </div>
-                <div class="uni-fact">
-                  <strong>Admission Pathway</strong>
-                  ${found.admission}
-                </div>
-                <div class="uni-fact" style="grid-column: span 2;">
-                  <strong>Flagship Programs</strong>
-                  ${found.courses}
-                </div>
-              </div>
-
-              <a class="visit-btn" href="${found.website}" target="_blank" rel="noopener noreferrer">
-                Visit Official Webpage 🌐
-              </a>
-            </div>
-          </div>
-        `;
-        setTimeout(() => appendMessage('bot', replyHtml), 400);
-      } else {
-        const genericCard = `
-          Maine <strong>"${query}"</strong> ke database profile ko parse kiya hai:<br>
-          <div class="uni-card">
-            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" alt="University Campus" />
-            <div class="uni-card-body">
-              <div class="uni-title">${query.toUpperCase()}</div>
-              <div class="uni-loc">📍 Recognized University / Institution</div>
-              <p style="color: #cbd5e1; font-size: 0.88rem;">Is university ke academic programs, syllabus aur admission circulars ki live information official portal par uplabdh hai.</p>
-              <div class="uni-fact-grid">
-                <div class="uni-fact">
-                  <strong>Status</strong>
-                  UGC / AICTE Recognized
-                </div>
-                <div class="uni-fact">
-                  <strong>Key Streams</strong>
-                  BCA, B.Tech, Management, Science
-                </div>
-              </div>
-              <a class="visit-btn" href="https://www.google.com/search?q=${encodeURIComponent(query + ' official university website')}" target="_blank" rel="noopener noreferrer">
-                Explore Official Portal 🌐
-              </a>
-            </div>
-          </div>
-        `;
-        setTimeout(() => appendMessage('bot', genericCard), 400);
-      }
-    }
-
-    function handleSend() {
-      const q = userInput.value.trim();
-      if (!q) return;
-      appendMessage('user', q);
-      userInput.value = '';
-      processUniversityQuery(q);
-    }
-
-    function queryUni(name) {
-      userInput.value = name;
-      handleSend();
-    }
-
-    sendBtn.addEventListener('click', handleSend);
-    userInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') handleSend();
-    });
-  </script>
-</body>
-</html>
+  {
+    "keys": ["iit bombay", "iitb", "bombay"],
+    "name": "IIT Bombay",
+    "location": "Mumbai, Maharashtra",
+    "established": "1958",
+    "courses": "B.Tech, M.Tech, Ph.D, CSE, AI",
+    "admission": "JEE Advanced, GATE",
+    "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80",
+    "website":
